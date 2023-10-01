@@ -1,0 +1,48 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="row" style="padding-top: 3rem;">
+        <div class="col-6">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" formControlName="name">
+            </mat-form-field>
+        </div>
+
+        <div class="col-6">
+            <mat-form-field appearance="outline">
+                <mat-label>User Name</mat-label>
+                <input matInput placeholder="UserName" formControlName="username">
+            </mat-form-field>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email">
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field appearance="outline">
+                <mat-label>Address Street</mat-label>
+                <input matInput placeholder="Address Street" formControlName="address">
+            </mat-form-field>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Company Name</mat-label>
+            <input matInput placeholder="Company Name" formControlName="company">
+        </mat-form-field>
+    </div>
+
+    <div align="end" style="padding-bottom: 2rem;">
+        <button mat-raised-button color="primary" [disabled]="userForm.invalid">Done</button>
+
+    </div>
+</form>

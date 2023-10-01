@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+}
+
+table thead , tbody{
+    text-align: center;
+}
+
+th,td {
+    padding: 10px;
+}
+  
+tr:hover {
+    background: whitesmoke;
+}
+
